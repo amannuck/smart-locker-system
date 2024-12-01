@@ -1,0 +1,148 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #3b82f6, #6366f1, #9333ea);
+  padding: 2rem;
+}
+
+/* Card Container */
+.content-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* Heading */
+.card-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+/* Table Container */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Table Styles */
+.locker-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.locker-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  background-color: #f3f4f6;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.locker-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.875rem;
+}
+
+.locker-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Status Tags */
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+}
+
+.status-tag.vacant {
+  width: 80px;
+  background-color: #10b981;
+}
+
+.status-tag.occupied {
+  width: 100px;
+  background-color: #dc2626;
+}
+
+/* Reserve Button */
+.reserve-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background-color: #2563eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.reserve-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+/* Reserved Text */
+.reserved-text {
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 1rem;
+  }
+
+  .content-card {
+    padding: 1rem;
+  }
+
+  .card-heading {
+    font-size: 1.25rem;
+  }
+
+  .locker-table th,
+  .locker-table td {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .locker-table th {
+    font-size: 0.7rem;
+  }
+}
