@@ -11,8 +11,5 @@
       "src": "/(.*)",
       "dest": "/build/$1"
     }
-  ],
-  "static": {
-    "directory": "build"
-  }
+  ]
 }
