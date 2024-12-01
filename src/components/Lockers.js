@@ -210,8 +210,8 @@ const Lockers = () => {
         <div className="mt-8 text-center text-gray-500 text-sm">
           © 2024 Locker Management System
         </div>
-        <LogoutButton />
       </div>
+      <LogoutButton />
     </div>
   );
 };
