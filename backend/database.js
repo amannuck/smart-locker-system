@@ -131,7 +131,7 @@ async function insertData() {
         user_id: 1,
         locker_id: 2,
         reservation_date: DateTime.now().setZone("America/Toronto").toISO(),
-        code_sequence: "12,27,13,12,21,12,27,13",
+        code_sequence: "12,27,13,12,21",
       },
     ];
 

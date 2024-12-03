@@ -102,7 +102,7 @@ const LockerInfo = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setSequence(data.sequence);
+        updateSequence(data.sequence);
         setDeviceName(data.device_name);
         setReservationDate(new Date(data.reservation_date));
       } else {
