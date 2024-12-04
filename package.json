@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd backend && npm start"
+    "start": "cd backend && npm start",
+    "heroku-postbuild": "cd backend && npm rebuild sqlite3"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,10 @@
     "luxon": "^3.5.0",
     "nodemon": "^3.1.7",
     "sqlite3": "^5.1.7"
+  },
+  "engines": {
+    "node": ">=16.x",
+    "npm": ">=8.x"
   },
   "keywords": [],
   "author": "",
