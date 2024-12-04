@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "../smart-locker-system/build")));
+app.use(express.static(path.join(__dirname, "build")));
 
 // Initialize database
 const db = new sqlite3.Database("lockers.db", (err) => {
