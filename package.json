@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd backend && npm start",
-    "heroku-postbuild": "cd smart-locker-system && npm install && npm run build && mv build ../backend/"
+    "heroku-postbuild": "cd backend && npm rebuild sqlite3"
   },
   "repository": {
     "type": "git",
