@@ -31,6 +31,10 @@ const Signup = () => {
       const data = await response.json();
       const user = data.user;
 
+      localStorage.setItem("id", user.id);
+      localStorage.setItem("device", user.device_name);
+      localStorage.setItem("username", user.username);
+
       if (response.ok) {
         setSuccess("Account created successfully! Redirecting to lockers...");
         setTimeout(() => navigate("/lockers", { state: { user } }), 3000); // Redirect to login after 3 seconds
